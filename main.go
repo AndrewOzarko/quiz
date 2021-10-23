@@ -22,6 +22,7 @@ func main() {
 	for _, item := range questions {
 
 		timer := time.NewTimer(time.Duration(30) * time.Second)
+		defer timer.Stop()
 
 		ch := make(chan bool, 1)
 		defer close(ch)
