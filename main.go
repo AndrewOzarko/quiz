@@ -51,7 +51,6 @@ func main() {
 
 		if strings.TrimSpace(item.Answer) != strings.TrimSpace(answer) {
 			log.Fatalln("Test failed!")
-			break
 		}
 	}
 
